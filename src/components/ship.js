@@ -1,13 +1,13 @@
 import React from "react";
 import { Line, Circle, Image } from 'react-konva';
 /* import '../spaceship.css' */
-import ship from '../img/spaceship.png';
+import ship from '../img/spaceshipsmall.png';
 import useImage from 'use-image';
 /* import './App.css'; */
 
 const ShipImage = () => {
     const [image] = useImage(ship);
-    return <Image image={image} />;
+    return <Image image={image} x={450} y={600}/>;
 };
 
 let modifier = 5;

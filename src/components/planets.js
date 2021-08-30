@@ -1,19 +1,39 @@
-import React from "react";
+import React, { Component } from "react";
+import { render } from 'react-dom';
 import { Circle, Image } from "react-konva";
-import planetOne from '../img/planetOne.png';
+import planetOne from '../img/planetOne.png'; 
 import planetTwo from '../img/planetTwo.png';
+import planetThree from '../img/planetThree.png';
+import planetFour from '../img/planetFour.png';
+import planetFive from '../img/planetFive.png';
 import useImage from 'use-image';
+/* import FirstPlanet from '../img/planetOne.png'; */
 /* import './App.css'; */
 
 
-const PlanetOneImage = () => {
+ const PlanetOneImage = () => {
   const [image] = useImage(planetOne);
-  return <Image image={image} />;
+  return <Image image={image} x={750} y={400} />;
 };
 
 const PlanetTwoImage = () => {
   const [image] = useImage(planetTwo);
-  return <Image image={image} /* x={this.image.x} y={this.image.y} */ />;
+  return <Image image={image} x={500}/>;
+};
+
+const PlanetThreeImage = () => {
+  const [image] = useImage(planetThree);
+  return <Image image={image} x={300} y={250}/>;
+};
+
+const PlanetFourImage = () => {
+  const [image] = useImage(planetFour);
+  return <Image image={image} x={100} y={550}/>;
+};
+
+const PlanetFiveImage = () => {
+  const [image] = useImage(planetFive);
+  return <Image image={image} x={0} y={0}/>;
 };
 
 
@@ -22,12 +42,34 @@ const PlanetTwoImage = () => {
 const Planet = () => {
   return (
     <>
-      <Circle x={100} y={100} fill="blue" stroke="yellow" radius={70} />
-      <PlanetTwoImage fill="green" stroke="yellow" radius={20} />
-      <PlanetOneImage x={670} y={49} fill="blue" stroke="orange" radius={70}  />
-      <Circle x={980} y={100} fill="red" stroke="green" radius={70} />
-      <Circle x={900} y={510} fill="grey" stroke="pink" radius={70} />
+      <PlanetFiveImage />
+      <PlanetTwoImage />
+      <PlanetOneImage />
+      <PlanetFourImage /> 
+      <PlanetThreeImage />
     </>
-  );
-};
+  ); 
+}
+
+/* class FirstPlanet extends React.Component {
+  state = {
+    image: null
+  };
+  componentDidMount() {
+    const image = new window.Image();
+    image.src = '../img/planetOne.png';
+    image.onload = () => {
+      this.setState({
+        image: image
+      });
+    };
+  }
+
+  render() {
+    return <Image image={this.state.image} y={400}/>;
+  }
+} */
+
+
+
 export default Planet;

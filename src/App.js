@@ -1,9 +1,11 @@
-import { Stage, Layer } from 'react-konva';
+import { Stage, Layer, Image } from 'react-konva';
 import './App.css';
 import { UP, DOWN, LEFT, RIGHT } from './helpers/constants'
 import Spaceship from './components/ship';
 import Space from './components/background';
 import Planet from './components/planets';
+import useImage from 'use-image';
+
 export const App = () => {
   return (
     <div className = "container" > 
@@ -11,7 +13,9 @@ export const App = () => {
         <Layer>
           <Spaceship className="spaceship"/>
           <Space />
-          <Planet /* x={700} y={150} */ />
+          {<Planet />}
+          {/* <FirstPlanet /> */}
+          {/* <PlanetOneImage /> */}
         </Layer>
       </Stage>
     </div>
