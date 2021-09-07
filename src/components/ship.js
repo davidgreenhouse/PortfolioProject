@@ -6,41 +6,75 @@ import useImage from 'use-image';
 /* import './App.css'; */
 
 const ShipImage = () => {
-    const [image] = useImage(ship);
-    return <Image image={image} x={450} y={600}/>;
+    const [image] = useImage(ship); 
+    const [x, setX] = React.useState(parseInt(600))
+    const [y, setY] = React.useState(parseInt(600))
+    const [rotation, setRotation] = React.useState(0)
+
+    const leftArrowPressed = () => {
+        setX(prevState => prevState - 5);
+        setRotation(270);
+        
+        /* var element = document.getElementById("ship");
+        console.log(element);
+        element.style.left = parseInt(element.style.left) - 5 + 'px'; */
+    }
+
+    const rightArrowPressed = () => {
+        setX(prevState => prevState + 5);
+        setRotation(90);
+    }
+
+    const upArrowPressed = () => {
+        setY(prevState => prevState - 5);
+        setRotation(0);
+    }
+
+    const downArrowPressed = () => {
+        setY(prevState => prevState + 5);
+        setRotation(180);
+    }  
+
+    const moveSelection = (evt) => {
+        console.log(evt.keyCode)
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed(); 
+                
+                break;
+            case 40:
+                downArrowPressed();
+                break; 
+        }
+    }; 
+    
+    React.useEffect(()=>{
+        window.addEventListener('keydown', moveSelection);   
+    },[]) 
+    
+    console.log(x, y)
+    return <Image id="ship" image={image} x={x} y={y} rotation={rotation} offsetX={72} offsetY={46.5}/* onkeydown="docready()" onkeyup="" onload="docReady()" */ />;
 };
 
-let modifier = 5;
-window.addEventListener('keydown', (event) => {
-    const { style } = Circle;
-    switch (event.key) {
-        case 'ArrowUp' : style.top = `$parseInt(style.top) - modifier}px`; break;
-        case 'ArrowDown' : style.top = `$parseInt(style.top) + modifier}px`; break;
-        case 'ArrowLeft' : style.left = `$parseInt(style.left) - modifier}px`; break;
-        case 'ArrowRight' : style.left = `$parseInt(style.left) + modifier}px`; break;
-    }
-})
+
+
+
+
 class Spaceship extends React.Component {
-    constructor (props) {
+    constructor(props) {
         super(props);
         this.ref = React.createRef();
     };
-    render () {
+    render() {
         return (
             <>
                 <ShipImage />
-                {/* <Circle position="absolute" top='0' left='0' fill="purple" stroke="blue" radius={30} />
-                 <Line
-                 x={50}
-                 y={300}
-                 points={[0, 0, 100, 0, 100, 100]}
-                 tension={0}
-                 closed
-                 stroke="black"
-                 fillLinearGradientStartPoint={{ x: -50, y: -50 }}
-                 fillLinearGradientEndPoint={{ x: 50, y: 50 }}
-                 fillLinearGradientColorStops={[0, 'purple', 1, 'violet']}
-               />} */}
             </>
         )
     }

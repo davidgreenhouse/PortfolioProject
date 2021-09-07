@@ -4,6 +4,7 @@ import { UP, DOWN, LEFT, RIGHT } from './helpers/constants'
 import Spaceship from './components/ship';
 import Space from './components/background';
 import Planet from './components/planets';
+import Satelite from './components/satelite';
 import useImage from 'use-image';
 
 export const App = () => {
@@ -11,13 +12,14 @@ export const App = () => {
     <div className = "container" > 
       <Stage className="canvas" width={window.innerWidth} height={window.innerHeight}>
         <Layer>
-          <Spaceship className="spaceship"/>
           <Space />
-          {<Planet />}
+          <Planet />
           {/* <FirstPlanet /> */}
           {/* <PlanetOneImage /> */}
+          <Satelite />
+          <Spaceship />
         </Layer>
-      </Stage>
+       </Stage>
     </div>
   );
 }

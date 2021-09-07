@@ -1,9 +1,11 @@
 import React from "react";
 import { Circle, Star } from "react-konva";
+
+
 const Space = () => {
   return (
-    <>
-      <Circle x={450} y={450} fill="white" stroke="white" radius={0.5} />
+    <div /* x={window.innerWidth/8} y={window.innerHeight/8} */>
+      <Circle x={566} y={290} fill="white" stroke="white" radius={0.5} />
       <Circle x={600} y={310} fill="white" stroke="white" radius={0.5} />
       <Circle x={250} y={600} fill="white" stroke="white" radius={0.5} />
       <Circle x={900} y={300} fill="white" stroke="white" radius={0.5} />
@@ -70,8 +72,103 @@ const Space = () => {
       <Circle x={166} y={90} fill="yellow" stroke="grey" radius={0.5} />
       <Circle x={51} y={343} fill="yellow" stroke="grey" radius={0.5} />
       <Circle x={812} y={467} fill="yellow" stroke="grey" radius={0.5} />
+      <Circle x={1529} y={330} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1120} y={360} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1344} y={620} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1710} y={70} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1750} y={777} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1755} y={450} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1580} y={80} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1468} y={271} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1109} y={444} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1210} y={40} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1250} y={357} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1355} y={450} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1400} y={270} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1555} y={661} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1439} y={298} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1329} y={30} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1450} y={760} fill="white" stroke="yellow" radius={0.5} />
+      <Circle x={1264} y={652} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1509} y={170} fill="yellow" stroke="white" radius={0.5} />
+      <Circle x={1101} y={316} fill="yellow" stroke="yellow" radius={0.5} />
+      <Circle x={1634} y={259} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1243} y={99} fill="yellow" stroke="yellow" radius={0.5} />
+      <Circle x={1468} y={311} fill="yellow" stroke="white" radius={0.5} />
+      <Circle x={1709} y={424} fill="white" stroke="yellow" radius={0.5} />
+      <Circle x={1410} y={610} fill="yellow" stroke="white" radius={0.5} />
+      <Circle x={1365} y={357} fill="white" stroke="yellow" radius={0.5} />
+      <Circle x={1155} y={600} fill="yellow" stroke="white" radius={0.5} />
+      <Circle x={1660} y={370} fill="white" stroke="yellow" radius={0.5} />
+      <Circle x={1701} y={661} fill="yellow" stroke="yellow" radius={0.5} />
+      <Circle x={1639} y={598} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1139} y={798} fill="yellow" stroke="yellow" radius={0.5} />
+      <Circle x={1239} y={744} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1297} y={698} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1166} y={823} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1200} y={618} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1139} y={718} fill="white" stroke="yellow" radius={0.5} />
+      <Circle x={1070} y={798} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1179} y={468} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1200} y={415} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1269} y={525} fill="yellow" stroke="yellow" radius={0.5} />
+      <Circle x={1374} y={522} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1439} y={589} fill="white" stroke="yellow" radius={0.5} />
+      <Circle x={1441} y={668} fill="yellow" stroke="yellow" radius={0.5} />
+      <Circle x={1320} y={618} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1561} y={499} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1322} y={476} fill="yellow" stroke="yellow" radius={0.5} />
+      <Circle x={1561} y={599} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1511} y={536} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1320} y={118} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1220} y={158} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1420} y={98} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1366} y={208} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1760} y={118} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1772} y={89} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1699} y={318} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1790} y={558} fill="yellow" stroke="yellow" radius={0.5} />
+      <Circle x={1790} y={714} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1772} y={389} fill="yellow" stroke="yellow" radius={0.5} /> 
+      <Circle x={1772} y={589} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1772} y={669} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1772} y={789} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1712} y={773} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1592} y={722} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1020} y={108} fill="white" stroke="white" radius={0.5} />   
+      <Circle x={1060} y={123} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1160} y={123} fill="yellow" stroke="yellow" radius={0.5} />
+      <Circle x={1111} y={155} fill="white" stroke="white" radius={0.5} />
+      <Circle x={1120} y={223} fill="yellow" stroke="yellow" radius={0.5} />
+      <Circle x={1270} y={293} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={130} y={710} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={324} y={610} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={160} y={990} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={534} y={30} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={258} y={571} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={959} y={444} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1024} y={610} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={1060} y={510} fill="white" stroke="white" radius={0.5} />
+      <Circle x={888} y={520} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={858} y={571} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={959} y={544} fill="white" stroke="white" radius={0.5} />
+      <Circle x={745} y={651} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={603} y={584} fill="white" stroke="white" radius={0.5} />
+      <Circle x={460} y={289} fill="white" stroke="white" radius={0.5} />
+      <Circle x={475} y={351} fill="grey" stroke="grey" radius={0.5} />
+      <Circle x={663} y={124} fill="white" stroke="white" radius={0.5} />
       
-      
+      <Star
+        x={1300}
+        y={779}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
       <Star
         x={250}
         y={250}
@@ -301,7 +398,7 @@ const Space = () => {
         numPoints={5}
         innerRadius={2}
         outerRadius={4}
-        fill="white"
+        fill="yellow"
         shadowColor="yellow"
         shadowBlur={70}
         shadowOpacity={1}
@@ -394,7 +491,469 @@ const Space = () => {
         shadowBlur={70}
         shadowOpacity={1}
       />
-    </>
+      <Star
+        x={1176}
+        y={170}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1616}
+        y={656}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1376}
+        y={670}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1488}
+        y={200}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1244}
+        y={379}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1080}
+        y={400}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1244}
+        y={379}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1080}
+        y={400}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1300}
+        y={779}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1400}
+        y={40}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1350}
+        y={809}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1480}
+        y={440}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1420}
+        y={399}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1330}
+        y={240}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1660}
+        y={559}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1690}
+        y={140}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1570}
+        y={789}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1620}
+        y={40}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1670}
+        y={337}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1120}
+        y={740}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1140}
+        y={67}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1220}
+        y={564}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={750}
+        y={767}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={520}
+        y={794}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={550}
+        y={747}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={700}
+        y={574}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={750}
+        y={547}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={70}
+        y={574}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={80}
+        y={491}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={270}
+        y={444}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={220}
+        y={351}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={30}
+        y={744}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={470}
+        y={51}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={390}
+        y={34}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={870}
+        y={818}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={830}
+        y={714}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1000}
+        y={54}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={910}
+        y={88}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={910}
+        y={588}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1010}
+        y={618}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="yellow"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1070}
+        y={548}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+      <Star
+        x={1030}
+        y={458}
+        numPoints={5}
+        innerRadius={2}
+        outerRadius={4}
+        fill="white"
+        shadowColor="yellow"
+        shadowBlur={70}
+        shadowOpacity={1}
+      />
+    </div>
   );
 };
 export default Space;

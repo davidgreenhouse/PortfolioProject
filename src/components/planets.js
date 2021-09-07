@@ -13,27 +13,27 @@ import useImage from 'use-image';
 
  const PlanetOneImage = () => {
   const [image] = useImage(planetOne);
-  return <Image image={image} x={750} y={400} />;
+  return <Image image={image} x={1300} y={400} />;
 };
 
 const PlanetTwoImage = () => {
   const [image] = useImage(planetTwo);
-  return <Image image={image} x={500}/>;
+  return <Image image={image} x={975} y={20}/>;
 };
 
 const PlanetThreeImage = () => {
   const [image] = useImage(planetThree);
-  return <Image image={image} x={300} y={250}/>;
+  return <Image image={image} x={500} y={250}/>;
 };
 
 const PlanetFourImage = () => {
   const [image] = useImage(planetFour);
-  return <Image image={image} x={100} y={550}/>;
+  return <Image image={image} x={80} y={500}/>;
 };
 
 const PlanetFiveImage = () => {
   const [image] = useImage(planetFive);
-  return <Image image={image} x={0} y={0}/>;
+  return <Image image={image} x={125} y={0}/>;
 };
 
 
@@ -41,13 +41,13 @@ const PlanetFiveImage = () => {
 
 const Planet = () => {
   return (
-    <>
+    <div>
       <PlanetFiveImage />
       <PlanetTwoImage />
       <PlanetOneImage />
       <PlanetFourImage /> 
       <PlanetThreeImage />
-    </>
+    </div>
   ); 
 }
 

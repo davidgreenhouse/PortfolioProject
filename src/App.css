@@ -10,12 +10,12 @@
 .container {
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   height: 100vh;
 }
 
-.spaceship {
+/* .spaceship {
   top: 50px;
-}
+} */
 
 
