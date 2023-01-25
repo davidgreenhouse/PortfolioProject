@@ -11,7 +11,7 @@ import satelite from'../img/satelite.png';
 
 
 const PlanetOneLink = () => {
-  window.open ("http://google.com")  
+  window.open ("https://anime-senpai.herokuapp.com/")  
 }
 
 const PlanetTwoLink = () => {
